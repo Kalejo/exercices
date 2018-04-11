@@ -25,9 +25,9 @@ p caesar_cipher("testing").join
 def chiffre_de_cesar (Lettre + Clef %26)
 	alphabet = []
 =end
-def chiffre_de_cesar (string, shift = 3)
+def chiffre_de_cesar (string, shift = 5)
 	alphabet = Array("a".."z")
 	encrypter = Hash[alphabet.zip(alphabet.rotate(shift))]
-	string.chars.map { |c| encrypter.fetch(c,"")}
+	string.chars.map { |c| encrypter.fetch(c," ")}
 end
 puts chiffre_de_cesar("what a strting").join

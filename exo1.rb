@@ -35,7 +35,7 @@ def sum (nb =[])
 	end
 end
 =end
-
+=begin
 def sum
 	total = 0
 	1000.times do |i|
@@ -46,8 +46,8 @@ def sum
 	puts total
 end
 sum
+=end
 
-=begin
 def sum
 total = 0
 	for i in 1..1000
@@ -58,4 +58,3 @@ total = 0
 	puts total
 end
 sum
-=end
